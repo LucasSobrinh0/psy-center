@@ -1,0 +1,306 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.titulo {
+    display: flex;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    justify-content: center;
+    font-family: 'Agbalumo', sans-serif;
+    font-size: 4rem;
+    /* Tamanho da fonte*/
+    color: black;
+    text-align: center;
+}
+
+.titulo p{
+    font-size: 3rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.container a {
+    padding: 1.0rem;
+    font-family: 'Agbalumo', sans-serif;
+    color: black;
+    font-size: 1.5rem;
+    position: relative;
+    /* Adiciona posicionamento relativo ao link */
+    text-decoration: none;
+    /* Remove a decoração padrão do link */
+    transition: border 0.3s;
+    /* Adiciona uma transição para suavizar o efeito */
+}
+
+.container a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    /* Espessura da borda preta */
+    background: black;
+    transform: scaleX(0);
+    /* Inicialmente, a borda está escondida */
+    transform-origin: 0% 50%;
+    /* Origem da transformação no canto esquerdo */
+    transition: transform 0.3s;
+    /* Adiciona uma transição para o efeito */
+}
+
+.container a:hover::after {
+    transform: scaleX(1);
+    /* Quando o mouse está sobre o link, a borda aparece */
+}
+
+
+.imagem {
+    text-align: center;
+    /* Centraliza o conteúdo horizontalmente */
+}
+
+.imagem img {
+    margin-top: 4vh;
+    display: inline-block;
+    /* Para alinhar a imagem no centro */
+    width: 40vh;
+    /* Define a largura da imagem */
+    height: auto;
+    /* Mantém a proporção da imagem */
+}
+
+.frases-efeito {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Roboto Slab', sans-serif;
+
+}
+
+.frases-efeito p {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 4vh;
+}
+
+.frases-efeito #frase-2 {
+    font-size: 1.5rem;
+}
+
+.container-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    font-family: 'Roboto Slab', sans-serif;
+    color: black;
+}
+
+.container-box-2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    font-family: 'Roboto Slab', sans-serif;
+    color: black;
+}
+
+.box {
+    width: 15vw;
+    margin: 0 1vw;
+    background: white;
+    border-radius: 10px;
+    /* Cantos arredondados */
+    text-align: center;
+    border: none;
+    /* Removemos a borda anterior */
+
+    /* Adicionamos um efeito de sombra 3D nas bordas */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+
+.box a {
+    text-decoration: none;
+}
+
+
+.end-line {
+    height: 10vh;
+}
+
+
+footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+.texto{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.texto p{
+    font-size: 1.5rem;
+    width: 80vw;
+    font-family: sans-serif;
+}
+
+.container-ajuda {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5vh;
+    font-family: 'Roboto Mono', sans-serif; /* Use a fonte 'Roboto' */
+  }
+  
+  .container-ajuda a {
+    width: 40vh;
+    margin: 0 1vw;
+    border-radius: 30px;
+    padding: 15px;
+    text-decoration: none; /* Remova a decoração padrão de links */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Centralize o texto horizontalmente */
+    background: #333; /* Cor de fundo dos containers */
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  .container-ajuda a:hover {
+    background: #555; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Efeito de escala ao passar o mouse */
+  }
+  
+  .container-ajuda p {
+    margin-top: 2vh;
+    color: white; /* Cor do texto dos parágrafos */
+  }
+  
+  #cvv {
+    background-color: #006600;
+  }
+  
+  #Teste {
+    background-color: #0000FF;
+  }
+
+  .artigos-psy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    margin-top: 5vh;
+  }
+  
+  .artigos-psy a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 30px;
+    padding: 1rem;
+    transition: transform 0.3s; /* Adiciona transição para efeito de zoom no hover */
+  }
+  
+  .artigos-psy a:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+  }
+  
+  .artigos-psy p {
+    font-size: 1.5rem;
+    margin-top: 2vh;
+  }
+  
+  .saiba-mais {
+    margin-top: 15px;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    color: #007bff; /* Cor do link "Saiba Mais" */
+    text-align: center;
+
+  }
+  
+  .saiba-mais span {
+    margin-left: 5px;
+  }
+  
+  
+  /* Estilos para dispositivos de tela pequena (por exemplo, largura máxima de 768px) */
+@media (max-width: 768px) {
+    .box {
+        width: 90%;
+        margin: 0 3vw;
+        /* Torna a caixa mais larga em telas pequenas */
+    }
+
+    .box h1 {
+        font-size: 1.2rem;
+        /* Reduz o tamanho do título */
+        font-family: 'Roboto Slab', sans-serif;
+        color: black;
+        margin-top: 2vh;
+    }
+
+    .box p {
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        font-size: 1rem;
+        /* Reduz o tamanho do texto */
+        font-family: 'Roboto Slab', sans-serif;
+        color: black;
+    }
+
+    .frases-efeito p {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-top: 4vh;
+    }
+
+    .frases-efeito #frase-2 {
+        font-size: 1.4rem;
+    }
+
+    .titulo p{
+        font-size: 3rem;
+    }
+
+    .container-ajuda h1{
+        font-size: 1rem;
+    }
+
+    .container-ajuda p{
+        font-size: 0.6rem;
+    } 
+
+    .artigos-psy a{
+        margin-left: 5vw;
+        width: 90vw;
+    }
+
+    .texto p{
+        font-size: 1rem;
+        width: 80vw;
+        font-family: sans-serif;
+    }
+
+
+}
